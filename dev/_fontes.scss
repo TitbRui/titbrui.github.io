@@ -1,0 +1,15 @@
+//fontes 
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(/recursos/fontes/PlayfairDisplay-Medium.ttf);
+  }
+
+$font1: PlayfairDisplay;
+
+@font-face {
+  font-family: Lato;
+  src: url(/recursos/fontes/Lato-Regular.ttf);
+}
+
+$font2: Lato;

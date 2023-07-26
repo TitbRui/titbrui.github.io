@@ -1,0 +1,121 @@
+// estilos.scss
+
+@import 'cores';
+@import 'fontes';
+@import 'tamanhos';
+
+.pagInicial{
+  background-color: $cor2;
+}
+
+.seta{
+  padding-bottom: $padBotSeta;
+}
+
+.navbar,
+.navDrop {
+  text-align: center;
+  background-color: $cor2;
+  border-radius: $radious;  
+}
+
+.titb {
+  font-family: $font1;
+  font-size: $titulos;
+  text-align: center;
+  padding-top: $padTittle;
+  color: $cor2;
+
+}
+
+.sub-titb {
+  text-align: right;
+  font-size: $subTitb;
+  color: $cor2;
+}
+
+.seta {
+  text-align: center;
+}
+
+.titutlo {
+  font-family: $font1;
+  font-size: $titulos;
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+  font-family: $font2;
+  font-size: $subtitulos;
+}
+
+.trabalhos {
+  padding-top: $padTop;
+}
+
+.cards {
+  text-align: center;
+  padding-bottom: $padBot;
+}
+
+.card-img-top {
+  border-radius: $radious;
+}
+
+.legendas {
+  padding-top: $padTop;
+  font-family: $font2;
+  font-size: $legendas;
+}
+
+.foto {
+  padding-top: $padTop;
+}
+
+a{
+  color: $cor1;
+}
+
+.carousel-inner {
+  border-radius: $radious;
+}
+
+// estruturas de repeticao - to ou through
+//seccoes pg icinial
+@for $seccao from 1 through 4 {
+  .seccao-#{$seccao} {
+    padding-top: $padTopSec;
+    padding-bottom: $padBotSec;
+  }
+}
+
+// youtube embend
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: $radious;
+}
+
+// video
+/* video background */
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
